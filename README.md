@@ -11,36 +11,36 @@ The project simulates a real-world retail analytics use case, focusing on scalab
 
 Raw CSV Data
 
-    │
+│
     
-    ▼
+▼
     
 Python ETL (Pandas)
 
-    │
+│
     
-    ├── Data Cleaning & Type Casting
+├── Data Cleaning & Type Casting
     
-    ├── Deduplication
+├── Deduplication
     
-    ├── Dimension Loading
+├── Dimension Loading
     
-    └── Fact Table Loading
+└── Fact Table Loading
     
-    │
+│
     
-    ▼
+▼
 PostgreSQL (Neon Cloud)
 
-    │
+│
     
-    ├── Dimension Tables
-    
-    ├── Fact Table
+├── Dimension Tables
 
-    ├── KPI SQL Views
+├── Fact Table
+
+├── KPI SQL Views
     
-    └── Data Quality Checks
+└── Data Quality Checks
     
 
 # Tech Stack
@@ -80,6 +80,7 @@ sales-data-pipeline-project/
 │   └── test_connection.py
 
 │
+
 ├── sql/
 
 │   │
@@ -93,6 +94,7 @@ sales-data-pipeline-project/
 │   │   └── create_fact_table.sql
 
 │   │
+
 │   ├── views/
 
 │   │   ├── kpi_monthly_sales.sql
