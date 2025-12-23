@@ -190,3 +190,7 @@ Loaded 9,000+ transactional records
 Created analytics-ready warehouse tables
 
 Enabled fast KPI querying using SQL views
+
+## Data Source 
+
+https://www.kaggle.com/datasets/abdul0haadi/e-commerce-sales-dataset-csv/data
