@@ -1,31 +1,49 @@
-Sales Data Engineering & Analytics Pipeline
-Project Overview
+## Sales Data Engineering & Analytics Pipeline
+
+# Project Overview
 
 This project demonstrates an end-to-end data engineering pipeline built using Python, PostgreSQL (Neon), and SQL.
 It ingests raw transactional sales data from CSV files, transforms it into a star-schema data warehouse, and exposes business-ready KPI views for analytics and decision-making.
 
 The project simulates a real-world retail analytics use case, focusing on scalability, data quality, and analytics readiness.
 
-Architecture overview
+# Architecture overview
+
 Raw CSV Data
+
     │
+    
     ▼
+    
 Python ETL (Pandas)
+
     │
+    
     ├── Data Cleaning & Type Casting
+    
     ├── Deduplication
+    
     ├── Dimension Loading
+    
     └── Fact Table Loading
+    
     │
+    
     ▼
 PostgreSQL (Neon Cloud)
-    │
-    ├── Dimension Tables
-    ├── Fact Table
-    ├── KPI SQL Views
-    └── Data Quality Checks
 
-Tech Stack
+    │
+    
+    ├── Dimension Tables
+    
+    ├── Fact Table
+
+    ├── KPI SQL Views
+    
+    └── Data Quality Checks
+    
+
+# Tech Stack
 
 Programming Language: Python
 
@@ -43,39 +61,65 @@ Data Quality Validation
 
 Version Control: Git & GitHub
 
-Project Structure
+# Project Structure
+
 sales-data-pipeline-project/
+
 │
+
 ├── data/
+
 │   └── orders.csv
+
 │
+
 ├── etl/
+
 │   └── load_orders.py
+
 │   └── test_connection.py
+
 │
 ├── sql/
+
 │   │
+
 │   ├── create_raw_orders.sql
+
 │   ├── schema/
+
 │   │   ├── create_dim_tables.sql
+
 │   │   └── create_fact_table.sql
+
 │   │
 │   ├── views/
+
 │   │   ├── kpi_monthly_sales.sql
+
 │   │   ├── kpi_top_profitable_products.sql
+
 │   │   └── kpi_customer_segment_perf.sql
+
 │   │
+
 │   └── data_quality/
+
 │       ├── duplicate_checks.sql
+
 │       └── null_checks.sql
+
 │
+
 ├── .env
+
 ├── README.md
+
 └── .gitignore
 
-Data Model (Star Schema)
+# Data Model (Star Schema)
 
-Fact Table
+# Fact Table
 
 fact_sales
 
@@ -97,7 +141,7 @@ discount
 
 profit
 
-Dimension Tables
+# Dimension Tables
 
 dim_customer (customer, segment)
 
@@ -107,7 +151,7 @@ dim_geography (country, state, city, postal code)
 
 dim_date (date, year, month, day)
 
-ETL Workflow
+# ETL Workflow
 
 Load raw CSV data using Pandas
 
@@ -123,7 +167,8 @@ Validate data integrity
 
 Expose analytics-ready KPI views
 
-KPI SQL Views
+# KPI SQL Views
+
 1. Monthly Sales & Profit
 
 Total orders
