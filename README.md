@@ -123,25 +123,7 @@ sales-data-pipeline-project/
 
 ## Fact Table
 
-fact_sales
-
-order_id
-
-customer_key
-
-product_key
-
-geography_key
-
-order_date_key
-
-sales
-
-quantity
-
-discount
-
-profit
+fact_sales( order_id, customer_key, product_key, geography_key, order_date_key, sales, quantity, discount, profit)
 
 ## Dimension Tables
 
