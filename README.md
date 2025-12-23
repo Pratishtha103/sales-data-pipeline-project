@@ -1,13 +1,13 @@
-## Sales Data Engineering & Analytics Pipeline
+# Sales Data Engineering & Analytics Pipeline
 
-# Project Overview
+## Project Overview
 
 This project demonstrates an end-to-end data engineering pipeline built using Python, PostgreSQL (Neon), and SQL.
 It ingests raw transactional sales data from CSV files, transforms it into a star-schema data warehouse, and exposes business-ready KPI views for analytics and decision-making.
 
 The project simulates a real-world retail analytics use case, focusing on scalability, data quality, and analytics readiness.
 
-# Architecture overview
+## Architecture overview
 
 Raw CSV Data
 
@@ -43,7 +43,7 @@ PostgreSQL (Neon Cloud)
 └── Data Quality Checks
     
 
-# Tech Stack
+## Tech Stack
 
 Programming Language: Python
 
@@ -61,7 +61,7 @@ Data Quality Validation
 
 Version Control: Git & GitHub
 
-# Project Structure
+## Project Structure
 
 sales-data-pipeline-project/
 
@@ -121,7 +121,7 @@ sales-data-pipeline-project/
 
 # Data Model (Star Schema)
 
-# Fact Table
+## Fact Table
 
 fact_sales
 
@@ -143,7 +143,7 @@ discount
 
 profit
 
-# Dimension Tables
+## Dimension Tables
 
 dim_customer (customer, segment)
 
@@ -201,7 +201,7 @@ NULL values in critical columns
 
 This ensures analytical reliability and data trust.
 
-Sample Results
+## Sample Results
 
 Loaded 9,000+ transactional records
 
